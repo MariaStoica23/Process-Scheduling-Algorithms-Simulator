@@ -1,0 +1,114 @@
+\doxysection{process.\+Process Class Reference}
+\hypertarget{classprocess_1_1_process}{}\label{classprocess_1_1_process}\index{process.Process@{process.Process}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classprocess_1_1_process_a65045fe3f1cf878a5936b5316d0a7fcd}{\+\_\+\+\_\+init\+\_\+\+\_\+}} (self, \mbox{\hyperlink{classprocess_1_1_process_adc1f2ed9968b491a6bab4809a4499d60}{pid}}, \mbox{\hyperlink{classprocess_1_1_process_a7288484db2f9a468aa96e7a948d83943}{burst\+\_\+time}}, \mbox{\hyperlink{classprocess_1_1_process_ad45a51064eda1b223190fca338693fe1}{priority}}=0, \mbox{\hyperlink{classprocess_1_1_process_ad36d37d6161b656c9ee3e05902a1bcbb}{arrival\+\_\+time}}=0)
+\item 
+\mbox{\hyperlink{classprocess_1_1_process_ac3b3b941c84cade6630d4cd97ccbcad3}{\+\_\+\+\_\+repr\+\_\+\+\_\+}} (self)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classprocess_1_1_process_adc1f2ed9968b491a6bab4809a4499d60}{pid}} = pid
+\item 
+\mbox{\hyperlink{classprocess_1_1_process_a7288484db2f9a468aa96e7a948d83943}{burst\+\_\+time}} = burst\+\_\+time
+\item 
+\mbox{\hyperlink{classprocess_1_1_process_a50291219d62a341eb5781aa8834598f0}{remaining\+\_\+time}} = \mbox{\hyperlink{classprocess_1_1_process_a7288484db2f9a468aa96e7a948d83943}{burst\+\_\+time}}
+\item 
+\mbox{\hyperlink{classprocess_1_1_process_ad45a51064eda1b223190fca338693fe1}{priority}} = priority
+\item 
+\mbox{\hyperlink{classprocess_1_1_process_ad36d37d6161b656c9ee3e05902a1bcbb}{arrival\+\_\+time}} = arrival\+\_\+time
+\item 
+\mbox{\hyperlink{classprocess_1_1_process_a7c251318f41c1e878390472e6aacfad1}{start\+\_\+time}} = None
+\item 
+\mbox{\hyperlink{classprocess_1_1_process_a71f6cc93feafeada415666d10bd9045d}{completion\+\_\+time}} = None
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@class Process
+@brief Reprezintă un proces utilizat în algoritmii de planificare a CPU-ului.
+
+Clasa conține atribute legate de timpul de execuție, timpul de sosire, prioritate și
+stările intermediare ale execuției procesului.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classprocess_1_1_process_a65045fe3f1cf878a5936b5316d0a7fcd}\index{process.Process@{process.Process}!\_\_init\_\_@{\_\_init\_\_}}
+\index{\_\_init\_\_@{\_\_init\_\_}!process.Process@{process.Process}}
+\doxysubsubsection{\texorpdfstring{\_\_init\_\_()}{\_\_init\_\_()}}
+{\footnotesize\ttfamily \label{classprocess_1_1_process_a65045fe3f1cf878a5936b5316d0a7fcd} 
+process.\+Process.\+\_\+\+\_\+init\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{, }\item[{}]{pid}{, }\item[{}]{burst\+\_\+time}{, }\item[{}]{priority}{ = {\ttfamily 0}, }\item[{}]{arrival\+\_\+time}{ = {\ttfamily 0}}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Inițializează un obiect de tip Process.
+
+@param pid ID-ul procesului (ex: "P1").
+@param burst_time Timpul total de execuție necesar (burst time).
+@param priority Prioritatea procesului (0 = implicit).
+@param arrival_time Timpul de sosire în sistem (0 = implicit).
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classprocess_1_1_process_ac3b3b941c84cade6630d4cd97ccbcad3}\index{process.Process@{process.Process}!\_\_repr\_\_@{\_\_repr\_\_}}
+\index{\_\_repr\_\_@{\_\_repr\_\_}!process.Process@{process.Process}}
+\doxysubsubsection{\texorpdfstring{\_\_repr\_\_()}{\_\_repr\_\_()}}
+{\footnotesize\ttfamily \label{classprocess_1_1_process_ac3b3b941c84cade6630d4cd97ccbcad3} 
+process.\+Process.\+\_\+\+\_\+repr\+\_\+\+\_\+ (\begin{DoxyParamCaption}\item[{}]{self}{}\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}@brief Returnează o reprezentare textuală a procesului.
+
+@return Un string cu ID-ul, timpul de execuție și prioritatea procesului.
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Member Data Documentation}
+\Hypertarget{classprocess_1_1_process_ad36d37d6161b656c9ee3e05902a1bcbb}\index{process.Process@{process.Process}!arrival\_time@{arrival\_time}}
+\index{arrival\_time@{arrival\_time}!process.Process@{process.Process}}
+\doxysubsubsection{\texorpdfstring{arrival\_time}{arrival\_time}}
+{\footnotesize\ttfamily \label{classprocess_1_1_process_ad36d37d6161b656c9ee3e05902a1bcbb} 
+process.\+Process.\+arrival\+\_\+time = arrival\+\_\+time}
+
+\Hypertarget{classprocess_1_1_process_a7288484db2f9a468aa96e7a948d83943}\index{process.Process@{process.Process}!burst\_time@{burst\_time}}
+\index{burst\_time@{burst\_time}!process.Process@{process.Process}}
+\doxysubsubsection{\texorpdfstring{burst\_time}{burst\_time}}
+{\footnotesize\ttfamily \label{classprocess_1_1_process_a7288484db2f9a468aa96e7a948d83943} 
+process.\+Process.\+burst\+\_\+time = burst\+\_\+time}
+
+\Hypertarget{classprocess_1_1_process_a71f6cc93feafeada415666d10bd9045d}\index{process.Process@{process.Process}!completion\_time@{completion\_time}}
+\index{completion\_time@{completion\_time}!process.Process@{process.Process}}
+\doxysubsubsection{\texorpdfstring{completion\_time}{completion\_time}}
+{\footnotesize\ttfamily \label{classprocess_1_1_process_a71f6cc93feafeada415666d10bd9045d} 
+process.\+Process.\+completion\+\_\+time = None}
+
+\Hypertarget{classprocess_1_1_process_adc1f2ed9968b491a6bab4809a4499d60}\index{process.Process@{process.Process}!pid@{pid}}
+\index{pid@{pid}!process.Process@{process.Process}}
+\doxysubsubsection{\texorpdfstring{pid}{pid}}
+{\footnotesize\ttfamily \label{classprocess_1_1_process_adc1f2ed9968b491a6bab4809a4499d60} 
+process.\+Process.\+pid = pid}
+
+\Hypertarget{classprocess_1_1_process_ad45a51064eda1b223190fca338693fe1}\index{process.Process@{process.Process}!priority@{priority}}
+\index{priority@{priority}!process.Process@{process.Process}}
+\doxysubsubsection{\texorpdfstring{priority}{priority}}
+{\footnotesize\ttfamily \label{classprocess_1_1_process_ad45a51064eda1b223190fca338693fe1} 
+process.\+Process.\+priority = priority}
+
+\Hypertarget{classprocess_1_1_process_a50291219d62a341eb5781aa8834598f0}\index{process.Process@{process.Process}!remaining\_time@{remaining\_time}}
+\index{remaining\_time@{remaining\_time}!process.Process@{process.Process}}
+\doxysubsubsection{\texorpdfstring{remaining\_time}{remaining\_time}}
+{\footnotesize\ttfamily \label{classprocess_1_1_process_a50291219d62a341eb5781aa8834598f0} 
+process.\+Process.\+remaining\+\_\+time = \mbox{\hyperlink{classprocess_1_1_process_a7288484db2f9a468aa96e7a948d83943}{burst\+\_\+time}}}
+
+\Hypertarget{classprocess_1_1_process_a7c251318f41c1e878390472e6aacfad1}\index{process.Process@{process.Process}!start\_time@{start\_time}}
+\index{start\_time@{start\_time}!process.Process@{process.Process}}
+\doxysubsubsection{\texorpdfstring{start\_time}{start\_time}}
+{\footnotesize\ttfamily \label{classprocess_1_1_process_a7c251318f41c1e878390472e6aacfad1} 
+process.\+Process.\+start\+\_\+time = None}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+implementations/\mbox{\hyperlink{process_8py}{process.\+py}}\end{DoxyCompactItemize}
